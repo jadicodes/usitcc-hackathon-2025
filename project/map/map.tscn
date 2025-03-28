@@ -40,10 +40,10 @@ village = ExtResource("3_4hjbm")
 
 [node name="VillageButton3" parent="." instance=ExtResource("2_a0dt8")]
 layout_mode = 0
-offset_left = 1006.0
-offset_top = 306.0
-offset_right = 1106.0
-offset_bottom = 406.0
+offset_left = 971.0
+offset_top = 292.0
+offset_right = 1071.0
+offset_bottom = 392.0
 village = ExtResource("5_7lyie")
 
 [node name="VillageButton4" parent="." instance=ExtResource("2_a0dt8")]
@@ -61,6 +61,17 @@ offset_top = 78.0
 offset_right = 1375.0
 offset_bottom = 178.0
 village = ExtResource("5_kffv2")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 35.0
+offset_top = 37.0
+offset_right = 470.0
+offset_bottom = 382.0
+theme_override_constants/outline_size = 12
+theme_override_font_sizes/font_size = 40
+text = "As a nomadic tribe, the Kickapoo have historically lived in many places. Where would you like to build your home next?"
+autowrap_mode = 2
 
 [connection signal="pressed" from="VillageButton" to="." method="_on_village_button_pressed"]
 [connection signal="pressed" from="VillageButton2" to="." method="_on_village_button_2_pressed"]
