@@ -27,16 +27,16 @@ position = Vector2(1077, 528)
 position = Vector2(1014, 365)
 
 [node name="Rock" parent="." instance=ExtResource("2_5vdjj")]
-position = Vector2(237, 182)
+position = Vector2(600, 392)
 
 [node name="Rock2" parent="." instance=ExtResource("2_5vdjj")]
-position = Vector2(347, 458)
+position = Vector2(286, 599)
 
 [node name="Rock3" parent="." instance=ExtResource("2_5vdjj")]
 position = Vector2(378, 891)
 
 [node name="Rock4" parent="." instance=ExtResource("2_5vdjj")]
-position = Vector2(1194, 173)
+position = Vector2(1331, 312)
 
 [node name="Rock5" parent="." instance=ExtResource("2_5vdjj")]
 position = Vector2(1537, 593)
@@ -48,5 +48,14 @@ position = Vector2(1358, 876)
 modulate = Color(0.590597, 0.204758, 0.153732, 1)
 position = Vector2(923, 515)
 texture = ExtResource("3_281jo")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 5.0
+offset_right = 1905.0
+offset_bottom = 179.0
+theme_override_font_sizes/font_size = 64
+text = "Create a circle of stones around the firepit so that the fire is safely contained."
+horizontal_alignment = 1
+autowrap_mode = 2
 
 [connection signal="rock_placed" from="Rock" to="." method="_on_rock_rock_placed"]

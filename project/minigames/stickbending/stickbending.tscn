@@ -105,6 +105,15 @@ shape = SubResource("CircleShape2D_t6a5i")
 position = Vector2(930, 512)
 shape = SubResource("RectangleShape2D_of5jb")
 
+[node name="Label" type="Label" parent="."]
+offset_left = 5.0
+offset_right = 1905.0
+offset_bottom = 179.0
+theme_override_font_sizes/font_size = 64
+text = "Drag saplings towards center of screen to build the Wikiup framework."
+horizontal_alignment = 1
+autowrap_mode = 2
+
 [connection signal="button_down" from="Stick/Button" to="Stick" method="_on_button_button_down"]
 [connection signal="button_up" from="Stick/Button" to="Stick" method="_on_button_button_up"]
 [connection signal="button_down" from="Stick2/Button" to="Stick2" method="_on_button_button_down"]
