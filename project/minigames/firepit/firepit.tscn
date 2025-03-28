@@ -9,58 +9,43 @@
 script = ExtResource("1_5vdjj")
 
 [node name="StoneSpot" parent="." instance=ExtResource("1_x2hpw")]
-position = Vector2(807, 362)
-
-[node name="StoneSpot2" parent="." instance=ExtResource("1_x2hpw")]
-position = Vector2(759, 524)
-
-[node name="StoneSpot3" parent="." instance=ExtResource("1_x2hpw")]
-position = Vector2(836, 689)
-
-[node name="StoneSpot4" parent="." instance=ExtResource("1_x2hpw")]
-position = Vector2(1016, 683)
-
-[node name="StoneSpot5" parent="." instance=ExtResource("1_x2hpw")]
-position = Vector2(1077, 528)
-
-[node name="StoneSpot6" parent="." instance=ExtResource("1_x2hpw")]
-position = Vector2(1014, 365)
+position = Vector2(923, 514)
 
 [node name="Rock" parent="." instance=ExtResource("2_5vdjj")]
-offset_left = 600.0
-offset_top = 392.0
-offset_right = 600.0
-offset_bottom = 392.0
+offset_left = 49.0
+offset_top = 197.0
+offset_right = 230.0
+offset_bottom = 293.0
 
 [node name="Rock2" parent="." instance=ExtResource("2_5vdjj")]
-offset_left = 286.0
-offset_top = 599.0
-offset_right = 286.0
-offset_bottom = 599.0
+offset_left = 143.0
+offset_top = 459.0
+offset_right = 324.0
+offset_bottom = 555.0
 
 [node name="Rock3" parent="." instance=ExtResource("2_5vdjj")]
-offset_left = 378.0
-offset_top = 891.0
-offset_right = 378.0
-offset_bottom = 891.0
+offset_left = 81.0
+offset_top = 823.0
+offset_right = 262.0
+offset_bottom = 919.0
 
 [node name="Rock4" parent="." instance=ExtResource("2_5vdjj")]
-offset_left = 1331.0
-offset_top = 312.0
-offset_right = 1331.0
-offset_bottom = 312.0
+offset_left = 1086.0
+offset_top = 881.0
+offset_right = 1267.0
+offset_bottom = 977.0
 
 [node name="Rock5" parent="." instance=ExtResource("2_5vdjj")]
-offset_left = 1537.0
-offset_top = 593.0
-offset_right = 1537.0
-offset_bottom = 593.0
+offset_left = 1667.0
+offset_top = 755.0
+offset_right = 1848.0
+offset_bottom = 851.0
 
 [node name="Rock6" parent="." instance=ExtResource("2_5vdjj")]
-offset_left = 1358.0
-offset_top = 876.0
-offset_right = 1358.0
-offset_bottom = 876.0
+offset_left = 1405.0
+offset_top = 442.0
+offset_right = 1586.0
+offset_bottom = 538.0
 
 [node name="Fire" type="Sprite2D" parent="."]
 modulate = Color(0.590597, 0.204758, 0.153732, 1)
@@ -77,3 +62,8 @@ horizontal_alignment = 1
 autowrap_mode = 2
 
 [connection signal="rock_placed" from="Rock" to="." method="_on_rock_rock_placed"]
+[connection signal="rock_placed" from="Rock2" to="." method="_on_rock_rock_placed"]
+[connection signal="rock_placed" from="Rock3" to="." method="_on_rock_rock_placed"]
+[connection signal="rock_placed" from="Rock4" to="." method="_on_rock_rock_placed"]
+[connection signal="rock_placed" from="Rock5" to="." method="_on_rock_rock_placed"]
+[connection signal="rock_placed" from="Rock6" to="." method="_on_rock_rock_placed"]

@@ -14,9 +14,6 @@ func _process(delta):
 		var mouse_pos = get_global_mouse_position()
 		global_position = mouse_pos
 		global.is_dragging = true
-		var tween = get_tree().create_tween()
-		if is_inside_dropable:
-			tween.tween_property(self,"position", body_ref.position,0.2).set_ease(Tween.EASE_OUT)
 
 func _on_area_2d_mouse_entered():
 	if not global.is_dragging:
@@ -35,7 +32,6 @@ func _on_area_2d_body_entered(body):
 		rock_placed.emit()
 		
 		
-
 func _on_area_2d_body_exited(body):
 	if body.is_in_group("dropable"):
 		is_inside_dropable = false
