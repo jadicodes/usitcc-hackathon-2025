@@ -13,10 +13,10 @@ offset_right = 40.0
 offset_bottom = 40.0
 texture = ExtResource("2_aees8")
 
+[node name="Firepit" parent="." instance=ExtResource("4_6ta0j")]
+
 [node name="Stickbending" parent="." instance=ExtResource("3_ixb0x")]
 position = Vector2(7, 9)
 
-[node name="Firepit" parent="." instance=ExtResource("4_6ta0j")]
-
-[connection signal="succeeded" from="Stickbending" to="." method="_on_stickbending_succeeded"]
 [connection signal="succeeded" from="Firepit" to="." method="_on_firepit_succeeded"]
+[connection signal="succeeded" from="Stickbending" to="." method="_on_stickbending_succeeded"]

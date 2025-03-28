@@ -4,8 +4,6 @@ var total_rocks_in_area : int= 0
 
 signal succeeded
 
-func _ready():
-	pass
 
 func _process(delta):
 	if total_rocks_in_area == 6:

@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://cg1g8w1n1byoh"]
 
-[ext_resource type="Script" path="res://minigames/firepit/firepit.gd" id="1_5vdjj"]
+[ext_resource type="Script" uid="uid://m6ru7d8h3gdm" path="res://minigames/firepit/firepit.gd" id="1_5vdjj"]
 [ext_resource type="PackedScene" uid="uid://bpqcqkl356duq" path="res://minigames/firepit/stone_spot.tscn" id="1_x2hpw"]
 [ext_resource type="PackedScene" uid="uid://7bvaemtb45ws" path="res://minigames/firepit/rock.tscn" id="2_5vdjj"]
 [ext_resource type="Texture2D" uid="uid://djj6nn8jt0sdp" path="res://icon.svg" id="3_281jo"]
