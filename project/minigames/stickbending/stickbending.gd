@@ -8,7 +8,7 @@ signal succeeded
 func _on_area_2d_area_entered(_area: Area2D) -> void:
 	total_sticks_in_area += 1
 	print(total_sticks_in_area)
-	if total_sticks_in_area == 2:
+	if total_sticks_in_area == 4:
 		emit_signal("succeeded")
 
 
