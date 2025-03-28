@@ -1,23 +1,28 @@
-[gd_scene load_steps=5 format=3 uid="uid://dsguvrqe37tti"]
+[gd_scene load_steps=6 format=3 uid="uid://dsguvrqe37tti"]
 
 [ext_resource type="Script" uid="uid://cm8kwn53n6s3m" path="res://minigames/stickbending/stick.gd" id="1_gd2ky"]
 [ext_resource type="Script" uid="uid://w6gkttdq4spo" path="res://minigames/stickbending/stickbending.gd" id="1_t6a5i"]
 
+[sub_resource type="Curve" id="Curve_t6a5i"]
+_data = [Vector2(0.0425532, 0.539326), 0.0, 0.0, 0, 0, Vector2(0.159574, 0.775281), 0.0, 0.0, 0, 0, Vector2(0.473404, 0.516854), 0.0, 0.0, 0, 0, Vector2(0.718085, 1), 1.20706, 1.20706, 0, 0, Vector2(0.930851, 1), 0.0, 0.0, 0, 0]
+point_count = 5
+
 [sub_resource type="CircleShape2D" id="CircleShape2D_t6a5i"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_of5jb"]
-size = Vector2(355, 483)
+size = Vector2(542, 483)
 
 [node name="Stickbending" type="Node2D"]
 script = ExtResource("1_t6a5i")
 
 [node name="Stick" type="Line2D" parent="."]
-position = Vector2(335, 698)
-points = PackedVector2Array(62, -127, 2, -41, -30, 74, -69, 194, -86, 389)
-default_color = Color(0.685742, 0.536419, 0.459867, 1)
+position = Vector2(326, 703)
+points = PackedVector2Array(62, -127, 18, -82, -12, -1, -37, 102, -76, 271, -86, 389)
+width = 40.0
+width_curve = SubResource("Curve_t6a5i")
+default_color = Color(0.545, 0.271, 0.075, 1)
 joint_mode = 2
 script = ExtResource("1_gd2ky")
-num_segments = 3
 
 [node name="Button" type="Button" parent="Stick"]
 offset_left = 41.0
@@ -34,75 +39,78 @@ position = Vector2(69, -127)
 shape = SubResource("CircleShape2D_t6a5i")
 
 [node name="Stick2" type="Line2D" parent="."]
-position = Vector2(494, 708)
-points = PackedVector2Array(62, -127, 2, -41, -30, 74, -69, 194, -86, 389)
-default_color = Color(0.685742, 0.536419, 0.459867, 1)
+position = Vector2(498, 692)
+points = PackedVector2Array(96, -208, 83, -98, 62, -35, 43, 82, -37, 102, -76, 271, -81, 407)
+width = 40.0
+width_curve = SubResource("Curve_t6a5i")
+default_color = Color(0.545, 0.271, 0.075, 1)
 joint_mode = 2
 script = ExtResource("1_gd2ky")
-num_segments = 3
 
 [node name="Button" type="Button" parent="Stick2"]
-offset_left = 41.0
-offset_top = -165.0
-offset_right = 80.0
-offset_bottom = -88.0
+offset_left = 37.0
+offset_top = -232.0
+offset_right = 155.0
+offset_bottom = -155.0
 theme_override_font_sizes/font_size = 50
 text = "grab"
 
 [node name="SuccessDetector" type="Area2D" parent="Stick2"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Stick2/SuccessDetector"]
-position = Vector2(69, -127)
+position = Vector2(94, -185)
 shape = SubResource("CircleShape2D_t6a5i")
 
 [node name="Stick3" type="Line2D" parent="."]
-position = Vector2(1381, 691)
-points = PackedVector2Array(-126, -133, -79, -50, -66, 64, -69, 194, -86, 389)
-default_color = Color(0.685742, 0.536419, 0.459867, 1)
+position = Vector2(1426, 727)
+points = PackedVector2Array(-97, -135, -49, -86, -46, 12, -37, 102, -76, 271, -86, 389)
+width = 40.0
+width_curve = SubResource("Curve_t6a5i")
+default_color = Color(0.545, 0.271, 0.075, 1)
 joint_mode = 2
 script = ExtResource("1_gd2ky")
-num_segments = 3
 
 [node name="Button" type="Button" parent="Stick3"]
-offset_left = -193.0
-offset_top = -174.0
-offset_right = -75.0
-offset_bottom = -97.0
+offset_left = -170.0
+offset_top = -167.0
+offset_right = -52.0
+offset_bottom = -90.0
 theme_override_font_sizes/font_size = 50
 text = "grab"
 
 [node name="SuccessDetector" type="Area2D" parent="Stick3"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Stick3/SuccessDetector"]
-position = Vector2(-132, -131)
+position = Vector2(-106, -109)
 shape = SubResource("CircleShape2D_t6a5i")
 
 [node name="Stick4" type="Line2D" parent="."]
-position = Vector2(1582, 687)
-points = PackedVector2Array(-83, -127, -47, -41, -30, 74, -69, 194, -86, 389)
-default_color = Color(0.685742, 0.536419, 0.459867, 1)
+position = Vector2(1627, 740)
+points = PackedVector2Array(-77, -265, -71, -141, -64, -8, -37, 102, -76, 271, -86, 389)
+width = 40.0
+width_curve = SubResource("Curve_t6a5i")
+default_color = Color(0.545, 0.271, 0.075, 1)
 joint_mode = 2
 script = ExtResource("1_gd2ky")
-num_segments = 3
 
 [node name="Button" type="Button" parent="Stick4"]
-offset_left = -148.0
-offset_top = -171.0
-offset_right = -30.0
-offset_bottom = -94.0
+offset_left = -136.0
+offset_top = -301.0
+offset_right = -18.0
+offset_bottom = -224.0
 theme_override_font_sizes/font_size = 50
 text = "grab"
 
 [node name="SuccessDetector" type="Area2D" parent="Stick4"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Stick4/SuccessDetector"]
-position = Vector2(-98, -125)
+position = Vector2(-89, -256)
 shape = SubResource("CircleShape2D_t6a5i")
 
 [node name="Area2D" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(930, 512)
+position = Vector2(938, 512)
 shape = SubResource("RectangleShape2D_of5jb")
 
 [node name="Label" type="Label" parent="."]
