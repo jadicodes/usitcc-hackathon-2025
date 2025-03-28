@@ -1,6 +1,5 @@
 extends Line2D
 
-@export var num_segments: int = 8
 @export var segment_length: int = 150
 var grabbed : bool
 
@@ -27,7 +26,7 @@ func _process(_delta):
 func _draw():
 	for point_index in get_point_count():
 		var point_position: Vector2 = get_point_position(point_index)
-		draw_circle(point_position, 20, Color.SADDLE_BROWN)
+		draw_circle(point_position, 22, Color.SADDLE_BROWN)
 
 
 func _on_button_button_down() -> void:

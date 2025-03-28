@@ -16,36 +16,48 @@ offset_left = 49.0
 offset_top = 197.0
 offset_right = 185.0
 offset_bottom = 333.0
+text = "ROCK"
+icon = null
 
 [node name="Rock2" parent="." instance=ExtResource("2_5vdjj")]
 offset_left = 143.0
 offset_top = 459.0
 offset_right = 279.0
 offset_bottom = 595.0
+text = "ROCK"
+icon = null
 
 [node name="Rock3" parent="." instance=ExtResource("2_5vdjj")]
 offset_left = 81.0
 offset_top = 823.0
 offset_right = 217.0
 offset_bottom = 959.0
+text = "ROCK"
+icon = null
 
 [node name="Rock4" parent="." instance=ExtResource("2_5vdjj")]
 offset_left = 1086.0
 offset_top = 881.0
 offset_right = 1222.0
 offset_bottom = 1017.0
+text = "ROCK"
+icon = null
 
 [node name="Rock5" parent="." instance=ExtResource("2_5vdjj")]
 offset_left = 1667.0
 offset_top = 755.0
 offset_right = 1803.0
 offset_bottom = 891.0
+text = "ROCK"
+icon = null
 
 [node name="Rock6" parent="." instance=ExtResource("2_5vdjj")]
 offset_left = 1405.0
 offset_top = 442.0
 offset_right = 1541.0
 offset_bottom = 578.0
+text = "ROCK"
+icon = null
 
 [node name="Fire" type="Sprite2D" parent="."]
 modulate = Color(0.590597, 0.204758, 0.153732, 1)
