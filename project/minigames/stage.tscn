@@ -13,3 +13,4 @@ offset_bottom = 40.0
 texture = ExtResource("2_aees8")
 
 [node name="Stickbending" parent="." instance=ExtResource("3_ixb0x")]
+position = Vector2(1115, 680)
