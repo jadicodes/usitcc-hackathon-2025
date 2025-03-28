@@ -6,7 +6,7 @@
 
 [resource]
 script = ExtResource("1_1ul08")
-village_name = "Springfield"
+village_name = "Missouri"
 background = ExtResource("1_d20ri")
 button_texture = ExtResource("2_criam")
 metadata/_custom_type_script = "uid://dunnhnu5jvnm6"

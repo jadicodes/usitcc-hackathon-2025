@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://cti65j72nqten" path="res://map/map.gd" id="1_hgrid"]
 [ext_resource type="PackedScene" uid="uid://r08qwxm16rsh" path="res://map/village_button.tscn" id="2_a0dt8"]
-[ext_resource type="Resource" uid="uid://df50dxj18nh4s" path="res://villages/springfield.tres" id="3_4hjbm"]
+[ext_resource type="Resource" uid="uid://df50dxj18nh4s" path="res://villages/missouri.tres" id="3_4hjbm"]
 
 [node name="Map" type="Control"]
 layout_mode = 3
