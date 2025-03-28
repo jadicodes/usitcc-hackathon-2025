@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Village" load_steps=3 format=3 uid="uid://c3s5dpodrygoo"]
+
+[ext_resource type="Texture2D" uid="uid://b75ltwsnw23gb" path="res://villages/wisconsin_button.png" id="1_bv7oc"]
+[ext_resource type="Script" uid="uid://dunnhnu5jvnm6" path="res://villages/village.gd" id="1_ier4j"]
+
+[resource]
+script = ExtResource("1_ier4j")
+village_name = "Wisconsin"
+button_texture = ExtResource("1_bv7oc")
+metadata/_custom_type_script = "uid://dunnhnu5jvnm6"

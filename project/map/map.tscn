@@ -1,10 +1,13 @@
-[gd_scene load_steps=6 format=3 uid="uid://ldhe0icymy6i"]
+[gd_scene load_steps=9 format=3 uid="uid://ldhe0icymy6i"]
 
 [ext_resource type="Script" uid="uid://cti65j72nqten" path="res://map/map.gd" id="1_hgrid"]
 [ext_resource type="PackedScene" uid="uid://r08qwxm16rsh" path="res://map/village_button.tscn" id="2_a0dt8"]
 [ext_resource type="Texture2D" uid="uid://dawmt1a8jykmu" path="res://map/map.png" id="2_lgq1i"]
 [ext_resource type="Resource" uid="uid://df50dxj18nh4s" path="res://villages/missouri.tres" id="3_4hjbm"]
+[ext_resource type="Resource" uid="uid://6a0vg4r4jn8e" path="res://villages/illinois.tres" id="5_7lyie"]
 [ext_resource type="Resource" uid="uid://dcp0v67kvysfq" path="res://villages/michigan.tres" id="5_kffv2"]
+[ext_resource type="Resource" uid="uid://c3s5dpodrygoo" path="res://villages/wisconsin.tres" id="5_kxmgb"]
+[ext_resource type="Resource" uid="uid://bgbxdetra68ow" path="res://villages/oklahoma.tres" id="6_5jdw0"]
 
 [node name="Map" type="Control"]
 layout_mode = 3
@@ -35,15 +38,15 @@ offset_left = 645.0
 offset_top = 17.0
 offset_right = 745.0
 offset_bottom = 117.0
-village = ExtResource("3_4hjbm")
+village = ExtResource("5_kxmgb")
 
 [node name="VillageButton3" parent="." instance=ExtResource("2_a0dt8")]
 layout_mode = 0
-offset_left = 1061.0
-offset_top = 341.0
-offset_right = 1161.0
-offset_bottom = 441.0
-village = ExtResource("3_4hjbm")
+offset_left = 971.0
+offset_top = 292.0
+offset_right = 1071.0
+offset_bottom = 392.0
+village = ExtResource("5_7lyie")
 
 [node name="VillageButton4" parent="." instance=ExtResource("2_a0dt8")]
 layout_mode = 0
@@ -51,7 +54,7 @@ offset_left = 401.0
 offset_top = 859.0
 offset_right = 501.0
 offset_bottom = 959.0
-village = ExtResource("3_4hjbm")
+village = ExtResource("6_5jdw0")
 
 [node name="VillageButton5" parent="." instance=ExtResource("2_a0dt8")]
 layout_mode = 0
@@ -60,6 +63,17 @@ offset_top = 78.0
 offset_right = 1375.0
 offset_bottom = 178.0
 village = ExtResource("5_kffv2")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 35.0
+offset_top = 37.0
+offset_right = 470.0
+offset_bottom = 382.0
+theme_override_constants/outline_size = 12
+theme_override_font_sizes/font_size = 40
+text = "As a nomadic tribe, the Kickapoo have historically lived in many places. Where would you like to build your home next?"
+autowrap_mode = 2
 
 [connection signal="pressed" from="VillageButton" to="." method="_on_village_button_pressed"]
 [connection signal="pressed" from="VillageButton2" to="." method="_on_village_button_2_pressed"]
