@@ -9,6 +9,7 @@ size = Vector2(120, 120)
 size = Vector2(128, 128)
 
 [node name="StoneSpot" type="StaticBody2D" groups=["dropable"]]
+visible = false
 script = ExtResource("1_yqfmk")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
