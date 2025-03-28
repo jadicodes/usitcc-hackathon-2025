@@ -27,4 +27,5 @@ func change_state(new_state):
 
 func _on_map_village_selected(button) -> void:
 	var current_village = $Map.get_village(button)
-	print(current_village)
+	$Stage.set_village(current_village)
+	change_state(state.STAGE)
