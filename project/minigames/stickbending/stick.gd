@@ -10,6 +10,7 @@ func _process(_delta):
 		var mouse_pos = to_local(get_global_mouse_position())
 		set_point_position(0, mouse_pos)
 		$Button.position = mouse_pos
+		$SuccessDetector.position = mouse_pos
 
 		# Make each point follow the one before it
 		for i in range(1, get_point_count() - 1):
