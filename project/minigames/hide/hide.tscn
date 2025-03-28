@@ -1,3 +1,51 @@
-[gd_scene format=3 uid="uid://dgbfkf5rb762o"]
+[gd_scene load_steps=4 format=3 uid="uid://dgbfkf5rb762o"]
+
+[ext_resource type="Script" uid="uid://ui6edqn0stbi" path="res://minigames/hide/hide.gd" id="1_4iv3a"]
+[ext_resource type="Script" uid="uid://b36mt6u73u8kv" path="res://minigames/hide/tapping_button.gd" id="2_j87tj"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_4iv3a"]
+size = Vector2(64, 64)
 
 [node name="Hide" type="Node2D"]
+script = ExtResource("1_4iv3a")
+
+[node name="TappingButton" type="Button" parent="."]
+offset_left = 682.0
+offset_top = 156.0
+offset_right = 754.0
+offset_bottom = 228.0
+icon = SubResource("PlaceholderTexture2D_4iv3a")
+script = ExtResource("2_j87tj")
+
+[node name="TappingButton2" type="Button" parent="."]
+offset_left = 675.0
+offset_top = 780.0
+offset_right = 747.0
+offset_bottom = 852.0
+icon = SubResource("PlaceholderTexture2D_4iv3a")
+script = ExtResource("2_j87tj")
+
+[node name="TappingButton3" type="Button" parent="."]
+offset_left = 1185.0
+offset_top = 772.0
+offset_right = 1257.0
+offset_bottom = 844.0
+icon = SubResource("PlaceholderTexture2D_4iv3a")
+script = ExtResource("2_j87tj")
+
+[node name="TappingButton4" type="Button" parent="."]
+offset_left = 1201.0
+offset_top = 169.0
+offset_right = 1273.0
+offset_bottom = 241.0
+icon = SubResource("PlaceholderTexture2D_4iv3a")
+script = ExtResource("2_j87tj")
+
+[connection signal="finished" from="TappingButton" to="." method="_on_tapping_button_finished"]
+[connection signal="pressed" from="TappingButton" to="TappingButton" method="_on_pressed"]
+[connection signal="finished" from="TappingButton2" to="." method="_on_tapping_button_finished"]
+[connection signal="pressed" from="TappingButton2" to="TappingButton2" method="_on_pressed"]
+[connection signal="finished" from="TappingButton3" to="." method="_on_tapping_button_finished"]
+[connection signal="pressed" from="TappingButton3" to="TappingButton3" method="_on_pressed"]
+[connection signal="finished" from="TappingButton4" to="." method="_on_tapping_button_finished"]
+[connection signal="pressed" from="TappingButton4" to="TappingButton4" method="_on_pressed"]
