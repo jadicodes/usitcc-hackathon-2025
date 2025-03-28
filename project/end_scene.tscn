@@ -7,6 +7,7 @@ offset_left = 118.0
 offset_top = 144.0
 offset_right = 424.0
 offset_bottom = 167.0
+theme_override_font_sizes/font_size = 36
 text = "Thats how the Kickapoo made Wickiups"
 
 [node name="Button" type="Button" parent="."]
@@ -14,4 +15,5 @@ offset_left = 131.0
 offset_top = 203.0
 offset_right = 218.0
 offset_bottom = 234.0
+theme_override_font_sizes/font_size = 36
 text = "Play again"
