@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://dsguvrqe37tti"]
+
+[ext_resource type="Script" uid="uid://w6gkttdq4spo" path="res://minigames/stickbending.gd" id="1_of5jb"]
+
+[node name="Stickbending" type="Node2D"]
+script = ExtResource("1_of5jb")
+
+[node name="Stick" type="Line2D" parent="."]
+position = Vector2(1059, 686)
+points = PackedVector2Array(113, -257, 59, -179, 7, -40, -21, 170, -21, 392)
+default_color = Color(0.685742, 0.536419, 0.459867, 1)
+joint_mode = 2

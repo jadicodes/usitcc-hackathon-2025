@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://cifgs3i3jii8o"]
+
+[ext_resource type="Script" uid="uid://b0iy3jrwn0vy1" path="res://minigames/stage.gd" id="1_6eo5e"]
+[ext_resource type="Texture2D" uid="uid://k7fkmievghne" path="res://villages/springfield_background.png" id="2_aees8"]
+[ext_resource type="PackedScene" uid="uid://dsguvrqe37tti" path="res://minigames/stickbending.tscn" id="3_ixb0x"]
+
+[node name="Stage" type="Node2D"]
+script = ExtResource("1_6eo5e")
+
+[node name="Background" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("2_aees8")
+
+[node name="Stickbending" parent="." instance=ExtResource("3_ixb0x")]
