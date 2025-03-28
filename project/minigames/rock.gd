@@ -19,6 +19,8 @@ func _process(delta):
 			var tween = get_tree().create_tween()
 			if is_inside_dropable:
 				tween.tween_property(self,"position", body_ref.position,0.2).set_ease(Tween.EASE_OUT)
+			else:
+				tween.tween_property(self, "global_position", inPos,0.2).set_ease(Tween.EASE_OUT)
 
 
 func _on_area_2d_mouse_entered():
@@ -32,7 +34,7 @@ func _on_area_2d_mouse_exited():
 		scale = Vector2(1, 1)
 
 func _on_area_2d_body_entered(body):
-	if body.is_in_group("dropable"):
+	if body.is_in_group('dropable'):
 		is_inside_dropable = true
 		body_ref = body
 

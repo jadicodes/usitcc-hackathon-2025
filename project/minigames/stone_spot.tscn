@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://bpqcqkl356duq"]
+
+[ext_resource type="Script" uid="uid://qde0owfauxju" path="res://minigames/stone_spot.gd" id="1_yqfmk"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ilrjy"]
+size = Vector2(120, 120)
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_yqfmk"]
+size = Vector2(128, 128)
+
+[node name="StoneSpot" type="StaticBody2D" groups=["dropable"]]
+script = ExtResource("1_yqfmk")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_ilrjy")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = SubResource("PlaceholderTexture2D_yqfmk")

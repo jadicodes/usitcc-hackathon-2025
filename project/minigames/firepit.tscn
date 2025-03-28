@@ -1,31 +1,42 @@
-[gd_scene load_steps=4 format=3 uid="uid://cg1g8w1n1byoh"]
+[gd_scene load_steps=3 format=3 uid="uid://cg1g8w1n1byoh"]
 
-[ext_resource type="Script" uid="uid://cfurd1v466tn6" path="res://minigames/rock.gd" id="2_4j7oc"]
-
-[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_kn612"]
-size = Vector2(128, 128)
-
-[sub_resource type="CircleShape2D" id="CircleShape2D_4j7oc"]
-radius = 64.0
+[ext_resource type="PackedScene" uid="uid://7bvaemtb45ws" path="res://minigames/rock.tscn" id="2_4j7oc"]
+[ext_resource type="PackedScene" uid="uid://bpqcqkl356duq" path="res://minigames/stone_spot.tscn" id="2_15neo"]
 
 [node name="Firepit" type="Node2D"]
 
-[node name="FireCenter" type="Sprite2D" parent="."]
-position = Vector2(960, 540)
-texture = SubResource("PlaceholderTexture2D_kn612")
+[node name="StoneSpot" parent="." instance=ExtResource("2_15neo")]
+position = Vector2(857, 390)
 
-[node name="Rock" type="Node2D" parent="."]
-position = Vector2(523, 330)
-script = ExtResource("2_4j7oc")
+[node name="StoneSpot2" parent="." instance=ExtResource("2_15neo")]
+position = Vector2(809, 524)
 
-[node name="Area2D" type="Area2D" parent="Rock"]
+[node name="StoneSpot3" parent="." instance=ExtResource("2_15neo")]
+position = Vector2(849, 658)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Rock/Area2D"]
-shape = SubResource("CircleShape2D_4j7oc")
+[node name="StoneSpot4" parent="." instance=ExtResource("2_15neo")]
+position = Vector2(991, 664)
 
-[node name="Sprite2D" type="Sprite2D" parent="Rock"]
+[node name="StoneSpot5" parent="." instance=ExtResource("2_15neo")]
+position = Vector2(1039, 537)
 
-[connection signal="body_entered" from="Rock/Area2D" to="Rock" method="_on_area_2d_body_entered"]
-[connection signal="body_exited" from="Rock/Area2D" to="Rock" method="_on_area_2d_body_exited"]
-[connection signal="mouse_entered" from="Rock/Area2D" to="Rock" method="_on_area_2d_mouse_entered"]
-[connection signal="mouse_exited" from="Rock/Area2D" to="Rock" method="_on_area_2d_mouse_exited"]
+[node name="StoneSpot6" parent="." instance=ExtResource("2_15neo")]
+position = Vector2(998, 396)
+
+[node name="Rock" parent="." instance=ExtResource("2_4j7oc")]
+position = Vector2(237, 182)
+
+[node name="Rock2" parent="." instance=ExtResource("2_4j7oc")]
+position = Vector2(347, 458)
+
+[node name="Rock3" parent="." instance=ExtResource("2_4j7oc")]
+position = Vector2(378, 891)
+
+[node name="Rock4" parent="." instance=ExtResource("2_4j7oc")]
+position = Vector2(1194, 173)
+
+[node name="Rock5" parent="." instance=ExtResource("2_4j7oc")]
+position = Vector2(1537, 593)
+
+[node name="Rock6" parent="." instance=ExtResource("2_4j7oc")]
+position = Vector2(1358, 876)
