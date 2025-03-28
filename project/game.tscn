@@ -21,3 +21,4 @@ layout_mode = 1
 unique_name_in_owner = true
 
 [connection signal="village_selected" from="Map" to="." method="_on_map_village_selected"]
+[connection signal="return_to_map" from="Stage" to="." method="_on_stage_return_to_map"]

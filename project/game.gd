@@ -29,3 +29,7 @@ func _on_map_village_selected(button) -> void:
 	var current_village = $Map.get_village(button)
 	$Stage.set_village(current_village)
 	change_state(state.STAGE)
+
+
+func _on_stage_return_to_map() -> void:
+	change_state(state.MAP)
