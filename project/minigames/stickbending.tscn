@@ -1,12 +1,34 @@
-[gd_scene load_steps=2 format=3 uid="uid://dsguvrqe37tti"]
+[gd_scene load_steps=3 format=3 uid="uid://dsguvrqe37tti"]
 
-[ext_resource type="Script" uid="uid://w6gkttdq4spo" path="res://minigames/stickbending.gd" id="1_of5jb"]
+[ext_resource type="Script" uid="uid://cm8kwn53n6s3m" path="res://minigames/stick.gd" id="2_656cg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_of5jb"]
+size = Vector2(355, 483)
 
 [node name="Stickbending" type="Node2D"]
-script = ExtResource("1_of5jb")
 
 [node name="Stick" type="Line2D" parent="."]
-position = Vector2(1059, 686)
-points = PackedVector2Array(113, -257, 59, -179, 7, -40, -21, 170, -21, 392)
+position = Vector2(189, 692)
+points = PackedVector2Array(62, -127, 2, -41, -30, 74, -69, 194, -86, 389)
 default_color = Color(0.685742, 0.536419, 0.459867, 1)
 joint_mode = 2
+script = ExtResource("2_656cg")
+num_segments = 3
+
+[node name="Button" type="Button" parent="Stick"]
+offset_left = 41.0
+offset_top = -165.0
+offset_right = 80.0
+offset_bottom = -88.0
+theme_override_font_sizes/font_size = 50
+text = "o"
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2(78, -7)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(930, 512)
+shape = SubResource("RectangleShape2D_of5jb")
+
+[connection signal="button_down" from="Stick/Button" to="Stick" method="_on_button_button_down"]
+[connection signal="button_up" from="Stick/Button" to="Stick" method="_on_button_button_up"]
