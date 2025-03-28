@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://ldhe0icymy6i"]
+[gd_scene load_steps=6 format=3 uid="uid://ldhe0icymy6i"]
 
 [ext_resource type="Script" uid="uid://cti65j72nqten" path="res://map/map.gd" id="1_hgrid"]
 [ext_resource type="PackedScene" uid="uid://r08qwxm16rsh" path="res://map/village_button.tscn" id="2_a0dt8"]
 [ext_resource type="Texture2D" uid="uid://dawmt1a8jykmu" path="res://map/map.png" id="2_lgq1i"]
 [ext_resource type="Resource" uid="uid://df50dxj18nh4s" path="res://villages/missouri.tres" id="3_4hjbm"]
+[ext_resource type="Resource" uid="uid://dcp0v67kvysfq" path="res://villages/michigan.tres" id="5_kffv2"]
 
 [node name="Map" type="Control"]
 layout_mode = 3
@@ -54,11 +55,14 @@ village = ExtResource("3_4hjbm")
 
 [node name="VillageButton5" parent="." instance=ExtResource("2_a0dt8")]
 layout_mode = 0
-offset_left = 1363.0
-offset_top = 106.0
-offset_right = 1463.0
-offset_bottom = 206.0
-village = ExtResource("3_4hjbm")
+offset_left = 1275.0
+offset_top = 78.0
+offset_right = 1375.0
+offset_bottom = 178.0
+village = ExtResource("5_kffv2")
 
 [connection signal="pressed" from="VillageButton" to="." method="_on_village_button_pressed"]
 [connection signal="pressed" from="VillageButton2" to="." method="_on_village_button_2_pressed"]
+[connection signal="pressed" from="VillageButton3" to="." method="_on_village_button_3_pressed"]
+[connection signal="pressed" from="VillageButton4" to="." method="_on_village_button_4_pressed"]
+[connection signal="pressed" from="VillageButton5" to="." method="_on_village_button_5_pressed"]
