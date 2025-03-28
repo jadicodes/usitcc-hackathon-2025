@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://b0iy3jrwn0vy1" path="res://minigames/stage.gd" id="1_6eo5e"]
 [ext_resource type="Texture2D" uid="uid://k7fkmievghne" path="res://villages/springfield_background.png" id="2_aees8"]
-[ext_resource type="PackedScene" uid="uid://dsguvrqe37tti" path="res://minigames/stickbending.tscn" id="3_ixb0x"]
+[ext_resource type="PackedScene" uid="uid://dsguvrqe37tti" path="res://minigames/stickbending/stickbending.tscn" id="3_ixb0x"]
 
 [node name="Stage" type="Node2D"]
 script = ExtResource("1_6eo5e")
@@ -14,3 +14,5 @@ texture = ExtResource("2_aees8")
 
 [node name="Stickbending" parent="." instance=ExtResource("3_ixb0x")]
 position = Vector2(7, 9)
+
+[connection signal="succeeded" from="Stickbending" to="." method="_on_stickbending_succeeded"]
