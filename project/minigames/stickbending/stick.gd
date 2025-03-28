@@ -1,7 +1,7 @@
 extends Line2D
 
-@export var num_segments: int = 4
-@export var segment_length: int = 80
+@export var num_segments: int = 8
+@export var segment_length: int = 150
 var grabbed : bool
 
 

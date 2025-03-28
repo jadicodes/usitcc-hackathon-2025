@@ -12,12 +12,12 @@ size = Vector2(355, 483)
 script = ExtResource("1_t6a5i")
 
 [node name="Stick" type="Line2D" parent="."]
-position = Vector2(335, 698)
+position = Vector2(326, 703)
 points = PackedVector2Array(62, -127, 2, -41, -30, 74, -69, 194, -86, 389)
-default_color = Color(0.685742, 0.536419, 0.459867, 1)
+width = 30.0
+default_color = Color(0.545, 0.271, 0.075, 1)
 joint_mode = 2
 script = ExtResource("1_gd2ky")
-num_segments = 3
 
 [node name="Button" type="Button" parent="Stick"]
 offset_left = 41.0
@@ -34,12 +34,12 @@ position = Vector2(69, -127)
 shape = SubResource("CircleShape2D_t6a5i")
 
 [node name="Stick2" type="Line2D" parent="."]
-position = Vector2(494, 708)
+position = Vector2(564, 696)
 points = PackedVector2Array(62, -127, 2, -41, -30, 74, -69, 194, -86, 389)
-default_color = Color(0.685742, 0.536419, 0.459867, 1)
+width = 30.0
+default_color = Color(0.545, 0.271, 0.075, 1)
 joint_mode = 2
 script = ExtResource("1_gd2ky")
-num_segments = 3
 
 [node name="Button" type="Button" parent="Stick2"]
 offset_left = 41.0
@@ -56,47 +56,47 @@ position = Vector2(69, -127)
 shape = SubResource("CircleShape2D_t6a5i")
 
 [node name="Stick3" type="Line2D" parent="."]
-position = Vector2(1381, 691)
-points = PackedVector2Array(-126, -133, -79, -50, -66, 64, -69, 194, -86, 389)
-default_color = Color(0.685742, 0.536419, 0.459867, 1)
+position = Vector2(1276, 724)
+points = PackedVector2Array(62, -127, 2, -41, -30, 74, -69, 194, -86, 389)
+width = 30.0
+default_color = Color(0.545, 0.271, 0.075, 1)
 joint_mode = 2
 script = ExtResource("1_gd2ky")
-num_segments = 3
 
 [node name="Button" type="Button" parent="Stick3"]
-offset_left = -193.0
-offset_top = -174.0
-offset_right = -75.0
-offset_bottom = -97.0
+offset_left = 41.0
+offset_top = -165.0
+offset_right = 80.0
+offset_bottom = -88.0
 theme_override_font_sizes/font_size = 50
 text = "grab"
 
 [node name="SuccessDetector" type="Area2D" parent="Stick3"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Stick3/SuccessDetector"]
-position = Vector2(-132, -131)
+position = Vector2(69, -127)
 shape = SubResource("CircleShape2D_t6a5i")
 
 [node name="Stick4" type="Line2D" parent="."]
-position = Vector2(1582, 687)
-points = PackedVector2Array(-83, -127, -47, -41, -30, 74, -69, 194, -86, 389)
-default_color = Color(0.685742, 0.536419, 0.459867, 1)
+position = Vector2(1434, 712)
+points = PackedVector2Array(62, -127, 2, -41, -30, 74, -69, 194, -86, 389)
+width = 30.0
+default_color = Color(0.545, 0.271, 0.075, 1)
 joint_mode = 2
 script = ExtResource("1_gd2ky")
-num_segments = 3
 
 [node name="Button" type="Button" parent="Stick4"]
-offset_left = -148.0
-offset_top = -171.0
-offset_right = -30.0
-offset_bottom = -94.0
+offset_left = 41.0
+offset_top = -165.0
+offset_right = 80.0
+offset_bottom = -88.0
 theme_override_font_sizes/font_size = 50
 text = "grab"
 
 [node name="SuccessDetector" type="Area2D" parent="Stick4"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Stick4/SuccessDetector"]
-position = Vector2(-98, -125)
+position = Vector2(69, -127)
 shape = SubResource("CircleShape2D_t6a5i")
 
 [node name="Area2D" type="Area2D" parent="."]
