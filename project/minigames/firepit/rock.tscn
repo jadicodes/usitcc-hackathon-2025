@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://7bvaemtb45ws"]
 
-[ext_resource type="Script" uid="uid://cfurd1v466tn6" path="res://minigames/rock.gd" id="1_pb1se"]
+[ext_resource type="Script" uid="uid://cfurd1v466tn6" path="res://minigames/firepit/rock.gd" id="1_pb1se"]
 [ext_resource type="Texture2D" uid="uid://djj6nn8jt0sdp" path="res://icon.svg" id="2_mbsms"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_y5oaf"]

@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://bpqcqkl356duq"]
 
-[ext_resource type="Script" uid="uid://qde0owfauxju" path="res://minigames/stone_spot.gd" id="1_yqfmk"]
+[ext_resource type="Script" uid="uid://qde0owfauxju" path="res://minigames/firepit/stone_spot.gd" id="1_yqfmk"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ilrjy"]
 size = Vector2(120, 120)
