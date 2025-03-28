@@ -23,7 +23,7 @@ func _process(delta):
 			else:
 				tween.tween_property(self, "global_position", inPos,0.2).set_ease(Tween.EASE_OUT)
 	if winCond == 6:
-		get_tree().quit() #used to quit the game to test a win condition
+		get_tree().change_scene_to_file("res://end_scene.tscn")
 
 
 func _on_area_2d_mouse_entered():
