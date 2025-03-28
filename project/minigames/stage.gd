@@ -46,4 +46,4 @@ func change_minigame(new_minigame):
 
 
 func _on_firepit_succeeded() -> void:
-	change_minigame(state.MAP)
+	get_tree().change_scene_to_file("res://end_scene.tscn")
