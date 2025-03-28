@@ -27,22 +27,40 @@ position = Vector2(1077, 528)
 position = Vector2(1014, 365)
 
 [node name="Rock" parent="." instance=ExtResource("2_5vdjj")]
-position = Vector2(600, 392)
+offset_left = 600.0
+offset_top = 392.0
+offset_right = 600.0
+offset_bottom = 392.0
 
 [node name="Rock2" parent="." instance=ExtResource("2_5vdjj")]
-position = Vector2(286, 599)
+offset_left = 286.0
+offset_top = 599.0
+offset_right = 286.0
+offset_bottom = 599.0
 
 [node name="Rock3" parent="." instance=ExtResource("2_5vdjj")]
-position = Vector2(378, 891)
+offset_left = 378.0
+offset_top = 891.0
+offset_right = 378.0
+offset_bottom = 891.0
 
 [node name="Rock4" parent="." instance=ExtResource("2_5vdjj")]
-position = Vector2(1331, 312)
+offset_left = 1331.0
+offset_top = 312.0
+offset_right = 1331.0
+offset_bottom = 312.0
 
 [node name="Rock5" parent="." instance=ExtResource("2_5vdjj")]
-position = Vector2(1537, 593)
+offset_left = 1537.0
+offset_top = 593.0
+offset_right = 1537.0
+offset_bottom = 593.0
 
 [node name="Rock6" parent="." instance=ExtResource("2_5vdjj")]
-position = Vector2(1358, 876)
+offset_left = 1358.0
+offset_top = 876.0
+offset_right = 1358.0
+offset_bottom = 876.0
 
 [node name="Fire" type="Sprite2D" parent="."]
 modulate = Color(0.590597, 0.204758, 0.153732, 1)
