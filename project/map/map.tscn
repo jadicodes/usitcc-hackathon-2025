@@ -1,0 +1,48 @@
+[gd_scene load_steps=3 format=3 uid="uid://ldhe0icymy6i"]
+
+[ext_resource type="Script" uid="uid://cti65j72nqten" path="res://map/map.gd" id="1_hgrid"]
+[ext_resource type="PackedScene" uid="uid://r08qwxm16rsh" path="res://map/village_button.tscn" id="2_a0dt8"]
+
+[node name="Map" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_hgrid")
+
+[node name="VillageButton" parent="." instance=ExtResource("2_a0dt8")]
+layout_mode = 0
+offset_left = 246.0
+offset_top = 167.0
+offset_right = 346.0
+offset_bottom = 267.0
+
+[node name="VillageButton2" parent="." instance=ExtResource("2_a0dt8")]
+layout_mode = 0
+offset_left = 527.0
+offset_top = 67.0
+offset_right = 627.0
+offset_bottom = 167.0
+
+[node name="VillageButton3" parent="." instance=ExtResource("2_a0dt8")]
+layout_mode = 0
+offset_left = 780.0
+offset_top = 176.0
+offset_right = 880.0
+offset_bottom = 276.0
+
+[node name="VillageButton4" parent="." instance=ExtResource("2_a0dt8")]
+layout_mode = 0
+offset_left = 365.0
+offset_top = 426.0
+offset_right = 465.0
+offset_bottom = 526.0
+
+[node name="VillageButton5" parent="." instance=ExtResource("2_a0dt8")]
+layout_mode = 0
+offset_left = 666.0
+offset_top = 425.0
+offset_right = 766.0
+offset_bottom = 525.0

@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="Village" load_steps=2 format=3 uid="uid://df50dxj18nh4s"]
+
+[ext_resource type="Script" uid="uid://dunnhnu5jvnm6" path="res://villages/village.gd" id="1_1ul08"]
+
+[resource]
+script = ExtResource("1_1ul08")
+village_name = "Springfield"
+metadata/_custom_type_script = "uid://dunnhnu5jvnm6"
