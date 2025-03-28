@@ -5,6 +5,7 @@ var is_inside_dropable = false
 var body_ref
 var offset: Vector2
 var inPos : Vector2 #Initial Posistion
+var winCond = 0
 
 func _process(delta):
 	if draggable:
@@ -21,6 +22,8 @@ func _process(delta):
 				tween.tween_property(self,"position", body_ref.position,0.2).set_ease(Tween.EASE_OUT)
 			else:
 				tween.tween_property(self, "global_position", inPos,0.2).set_ease(Tween.EASE_OUT)
+	if winCond == 6:
+		get_tree().quit()
 
 
 func _on_area_2d_mouse_entered():
@@ -37,6 +40,7 @@ func _on_area_2d_body_entered(body):
 	if body.is_in_group('dropable'):
 		is_inside_dropable = true
 		body_ref = body
+		winCond += 1
 		
 
 func _on_area_2d_body_exited(body):
