@@ -5,6 +5,7 @@ var secured : int = 0
 
 signal succeeded
 
+
 func _process(delta):
 	
 	if secured != 8:
