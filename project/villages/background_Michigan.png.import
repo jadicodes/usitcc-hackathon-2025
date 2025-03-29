@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://5pbv572c6mx7"
-path="res://.godot/imported/springfield_button.png-9162f43ab8531b472896affadbb75912.ctex"
+uid="uid://kx3mye21w8r1"
+path="res://.godot/imported/background_Michigan.png-43e99019c5d1e128de9464f180edb3b0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://villages/springfield_button.png"
-dest_files=["res://.godot/imported/springfield_button.png-9162f43ab8531b472896affadbb75912.ctex"]
+source_file="res://villages/background_Michigan.png"
+dest_files=["res://.godot/imported/background_Michigan.png-43e99019c5d1e128de9464f180edb3b0.ctex"]
 
 [params]
 
