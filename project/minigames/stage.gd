@@ -8,6 +8,7 @@ enum state {
 	INTRO,
 	STICKBENDER,
 	FIREPIT,
+	HIDE,
 	MAP
 }
 
@@ -25,7 +26,7 @@ func set_village(new_village):
 
 
 func _on_stickbending_succeeded() -> void:
-	change_minigame(state.FIREPIT)
+	change_minigame(state.HIDE)
 
 
 func change_minigame(new_minigame):
@@ -34,12 +35,22 @@ func change_minigame(new_minigame):
 		state.FIREPIT:
 			$Stickbending.hide()
 			$Firepit.show()
+			$Hide.hide()
 		state.STICKBENDER:
 			$Stickbending.show()
 			$Firepit.hide()
+			$Hide.hide()
+		state.HIDE:
+			$Stickbending.hide()
+			$Firepit.hide()
+			$Hide.show()
 		state.MAP:
 			emit_signal("return_to_map")
 
 
 func _on_firepit_succeeded() -> void:
 	get_tree().change_scene_to_file("res://end_scene.tscn")
+
+
+func _on_hide_suceeded() -> void:
+	change_minigame(state.FIREPIT)
