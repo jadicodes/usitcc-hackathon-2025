@@ -8,71 +8,71 @@
 script = ExtResource("1_4iv3a")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(469, 664.75)
+position = Vector2(650.382, 690.622)
 rotation = 0.615816
 scale = Vector2(1.31455, 1.68818)
 texture = ExtResource("2_uyolu")
 
 [node name="Sprite2D2" type="Sprite2D" parent="."]
-position = Vector2(1461, 692)
+position = Vector2(1265.37, 692.249)
 rotation = -0.646569
 scale = Vector2(1.31455, 1.66995)
 texture = ExtResource("2_uyolu")
 
 [node name="TappingButton" type="Button" parent="."]
-offset_left = 373.0
-offset_top = 384.0
-offset_right = 445.0
-offset_bottom = 456.0
+offset_left = 554.382
+offset_top = 409.872
+offset_right = 626.382
+offset_bottom = 481.872
 script = ExtResource("2_j87tj")
 
 [node name="TappingButton2" type="Button" parent="."]
-offset_left = 701.0
-offset_top = 598.0
-offset_right = 773.0
-offset_bottom = 670.0
+offset_left = 882.382
+offset_top = 623.872
+offset_right = 954.382
+offset_bottom = 695.872
 script = ExtResource("2_j87tj")
 
 [node name="TappingButton3" type="Button" parent="."]
-offset_left = 124.0
-offset_top = 749.0
-offset_right = 196.0
-offset_bottom = 821.0
+offset_left = 305.382
+offset_top = 774.872
+offset_right = 377.382
+offset_bottom = 846.872
 script = ExtResource("2_j87tj")
 
 [node name="TappingButton4" type="Button" parent="."]
-offset_left = 407.0
-offset_top = 983.0
-offset_right = 479.0
-offset_bottom = 1055.0
+offset_left = 588.382
+offset_top = 1008.87
+offset_right = 660.382
+offset_bottom = 1080.87
 script = ExtResource("2_j87tj")
 
 [node name="TappingButton5" type="Button" parent="."]
-offset_left = 1180.0
-offset_top = 633.0
-offset_right = 1252.0
-offset_bottom = 705.0
+offset_left = 984.368
+offset_top = 633.249
+offset_right = 1056.37
+offset_bottom = 705.249
 script = ExtResource("2_j87tj")
 
 [node name="TappingButton6" type="Button" parent="."]
-offset_left = 1476.0
-offset_top = 410.0
-offset_right = 1548.0
-offset_bottom = 482.0
+offset_left = 1280.37
+offset_top = 410.249
+offset_right = 1352.37
+offset_bottom = 482.249
 script = ExtResource("2_j87tj")
 
 [node name="TappingButton7" type="Button" parent="."]
-offset_left = 1450.0
-offset_top = 981.0
-offset_right = 1522.0
-offset_bottom = 1053.0
+offset_left = 1254.37
+offset_top = 981.249
+offset_right = 1326.37
+offset_bottom = 1053.25
 script = ExtResource("2_j87tj")
 
 [node name="TappingButton8" type="Button" parent="."]
-offset_left = 1761.0
-offset_top = 766.0
-offset_right = 1833.0
-offset_bottom = 838.0
+offset_left = 1565.37
+offset_top = 766.249
+offset_right = 1637.37
+offset_bottom = 838.249
 script = ExtResource("2_j87tj")
 
 [node name="Label" type="Label" parent="."]
