@@ -8,6 +8,7 @@ _data = [Vector2(0.0425532, 0.539326), 0.0, 0.0, 0, 0, Vector2(0.159574, 0.77528
 point_count = 5
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_t6a5i"]
+radius = 24.8395
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_of5jb"]
 size = Vector2(542, 483)
@@ -33,9 +34,10 @@ theme_override_font_sizes/font_size = 50
 text = "grab"
 
 [node name="SuccessDetector" type="Area2D" parent="Stick"]
+position = Vector2(110, -122)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Stick/SuccessDetector"]
-position = Vector2(69, -127)
+position = Vector2(3, 1)
 shape = SubResource("CircleShape2D_t6a5i")
 
 [node name="Stick2" type="Line2D" parent="."]
@@ -56,9 +58,10 @@ theme_override_font_sizes/font_size = 50
 text = "grab"
 
 [node name="SuccessDetector" type="Area2D" parent="Stick2"]
+position = Vector2(105, -188)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Stick2/SuccessDetector"]
-position = Vector2(94, -185)
+position = Vector2(0, 3)
 shape = SubResource("CircleShape2D_t6a5i")
 
 [node name="Stick3" type="Line2D" parent="."]
@@ -79,9 +82,10 @@ theme_override_font_sizes/font_size = 50
 text = "grab"
 
 [node name="SuccessDetector" type="Area2D" parent="Stick3"]
+position = Vector2(-110, -135)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Stick3/SuccessDetector"]
-position = Vector2(-106, -109)
+position = Vector2(4, 4)
 shape = SubResource("CircleShape2D_t6a5i")
 
 [node name="Stick4" type="Line2D" parent="."]
@@ -102,9 +106,10 @@ theme_override_font_sizes/font_size = 50
 text = "grab"
 
 [node name="SuccessDetector" type="Area2D" parent="Stick4"]
+position = Vector2(-96, -243)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Stick4/SuccessDetector"]
-position = Vector2(-89, -256)
+position = Vector2(3, -1)
 shape = SubResource("CircleShape2D_t6a5i")
 
 [node name="Area2D" type="Area2D" parent="."]
