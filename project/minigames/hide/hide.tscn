@@ -79,8 +79,9 @@ script = ExtResource("2_j87tj")
 offset_left = 5.0
 offset_right = 1905.0
 offset_bottom = 179.0
+theme_override_constants/outline_size = 14
 theme_override_font_sizes/font_size = 64
-text = "Attach the hide to the structure."
+text = "Attach the hide to the structure by tapping on all eight corners four times."
 horizontal_alignment = 1
 autowrap_mode = 2
 
