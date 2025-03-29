@@ -13,7 +13,7 @@ enum state {
 
 var current_minigame : int
 
-@onready var _background : CompressedTexture2D
+@onready var _background = $Background
 
 func _ready():
 	change_minigame(state.STICKBENDER)
@@ -21,14 +21,10 @@ func _ready():
 
 func set_village(new_village):
 	village = new_village
-	
-
-func set_properties():
 	_background.texture = village.background
 
 
 func _on_stickbending_succeeded() -> void:
-	print("stickbending succeeded")
 	change_minigame(state.FIREPIT)
 
 

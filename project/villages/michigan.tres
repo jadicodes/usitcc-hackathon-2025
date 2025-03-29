@@ -1,10 +1,12 @@
-[gd_resource type="Resource" script_class="Village" load_steps=3 format=3 uid="uid://dcp0v67kvysfq"]
+[gd_resource type="Resource" script_class="Village" load_steps=4 format=3 uid="uid://dcp0v67kvysfq"]
 
 [ext_resource type="Texture2D" uid="uid://cplufptuhvvrr" path="res://villages/michigan_button.png" id="1_adced"]
+[ext_resource type="Texture2D" uid="uid://dbesvbfc1ky8m" path="res://villages/background_Oaklahoma.png" id="1_bifbi"]
 [ext_resource type="Script" uid="uid://dunnhnu5jvnm6" path="res://villages/village.gd" id="1_gx033"]
 
 [resource]
 script = ExtResource("1_gx033")
 village_name = "Michigan"
+background = ExtResource("1_bifbi")
 button_texture = ExtResource("1_adced")
 metadata/_custom_type_script = "uid://dunnhnu5jvnm6"
