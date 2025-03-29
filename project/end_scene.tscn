@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://1s3kxhldoi3v"]
 
-[ext_resource type="Script" uid="uid://bwj14q8l2o543" path="res://end_scene.gd" id="1_3wcc1"]
+[ext_resource type="Script" path="res://end_scene.gd" id="1_3wcc1"]
 [ext_resource type="Texture2D" uid="uid://dbesvbfc1ky8m" path="res://villages/background_Oaklahoma.png" id="2_jvrxn"]
 
 [node name="EndScene" type="Node2D"]
