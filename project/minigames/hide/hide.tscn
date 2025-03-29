@@ -8,8 +8,8 @@
 script = ExtResource("1_4iv3a")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(977, 595)
-scale = Vector2(1.31455, 2.10941)
+position = Vector2(977, 575.5)
+scale = Vector2(1.31455, 2.02407)
 texture = ExtResource("2_uyolu")
 
 [node name="TappingButton" type="Button" parent="."]
