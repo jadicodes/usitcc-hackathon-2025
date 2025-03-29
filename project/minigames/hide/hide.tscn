@@ -1,7 +1,10 @@
-[gd_scene load_steps=4 format=3 uid="uid://dgbfkf5rb762o"]
+[gd_scene load_steps=5 format=3 uid="uid://dgbfkf5rb762o"]
 
 [ext_resource type="Script" uid="uid://ui6edqn0stbi" path="res://minigames/hide/hide.gd" id="1_4iv3a"]
 [ext_resource type="Script" uid="uid://b36mt6u73u8kv" path="res://minigames/hide/tapping_button.gd" id="2_j87tj"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_j87tj"]
+size = Vector2(460, 850)
 
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_4iv3a"]
 size = Vector2(64, 64)
@@ -9,35 +12,39 @@ size = Vector2(64, 64)
 [node name="Hide" type="Node2D"]
 script = ExtResource("1_4iv3a")
 
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(981, 586)
+texture = SubResource("PlaceholderTexture2D_j87tj")
+
 [node name="TappingButton" type="Button" parent="."]
-offset_left = 682.0
-offset_top = 156.0
-offset_right = 754.0
-offset_bottom = 228.0
+offset_left = 728.0
+offset_top = 140.0
+offset_right = 800.0
+offset_bottom = 212.0
 icon = SubResource("PlaceholderTexture2D_4iv3a")
 script = ExtResource("2_j87tj")
 
 [node name="TappingButton2" type="Button" parent="."]
-offset_left = 675.0
-offset_top = 780.0
-offset_right = 747.0
-offset_bottom = 852.0
+offset_left = 735.0
+offset_top = 943.0
+offset_right = 807.0
+offset_bottom = 1015.0
 icon = SubResource("PlaceholderTexture2D_4iv3a")
 script = ExtResource("2_j87tj")
 
 [node name="TappingButton3" type="Button" parent="."]
-offset_left = 1185.0
-offset_top = 772.0
-offset_right = 1257.0
-offset_bottom = 844.0
+offset_left = 1167.0
+offset_top = 943.0
+offset_right = 1239.0
+offset_bottom = 1015.0
 icon = SubResource("PlaceholderTexture2D_4iv3a")
 script = ExtResource("2_j87tj")
 
 [node name="TappingButton4" type="Button" parent="."]
-offset_left = 1201.0
-offset_top = 169.0
-offset_right = 1273.0
-offset_bottom = 241.0
+offset_left = 1180.0
+offset_top = 143.0
+offset_right = 1252.0
+offset_bottom = 215.0
 icon = SubResource("PlaceholderTexture2D_4iv3a")
 script = ExtResource("2_j87tj")
 
