@@ -7,7 +7,7 @@ signal succeeded
 
 func _process(delta):
 	
-	if secured != 4:
+	if secured != 8:
 		return
 	emit_signal("succeeded")
 
