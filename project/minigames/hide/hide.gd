@@ -12,5 +12,6 @@ func _process(delta):
 	emit_signal("succeeded")
 
 
-func _on_tapping_button_finished():
+func _on_tapping_button_no_more_clicks():
 	secured += 1
+	print(secured)

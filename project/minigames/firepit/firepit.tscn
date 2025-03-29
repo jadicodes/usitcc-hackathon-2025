@@ -1,47 +1,84 @@
-[gd_scene load_steps=4 format=3 uid="uid://cg1g8w1n1byoh"]
+[gd_scene load_steps=5 format=3 uid="uid://cg1g8w1n1byoh"]
 
 [ext_resource type="Script" uid="uid://m6ru7d8h3gdm" path="res://minigames/firepit/firepit.gd" id="1_5vdjj"]
 [ext_resource type="PackedScene" uid="uid://bpqcqkl356duq" path="res://minigames/firepit/stone_spot.tscn" id="1_x2hpw"]
 [ext_resource type="PackedScene" uid="uid://7bvaemtb45ws" path="res://minigames/firepit/rock.tscn" id="2_5vdjj"]
+[ext_resource type="Texture2D" uid="uid://b5hkvr2kivong" path="res://Assets/Rock1_64.png" id="3_5vdjj"]
 
 [node name="Firepit" type="Node2D"]
 script = ExtResource("1_5vdjj")
 
 [node name="Rock" parent="." instance=ExtResource("2_5vdjj")]
-offset_left = 212.0
-offset_top = 259.0
-offset_right = 284.0
-offset_bottom = 331.0
+offset_left = 210.0
+offset_top = 253.0
+offset_right = 338.0
+offset_bottom = 381.0
+icon = null
+
+[node name="Sprite2D" type="Sprite2D" parent="Rock"]
+scale = Vector2(2, 2)
+texture = ExtResource("3_5vdjj")
+centered = false
 
 [node name="Rock2" parent="." instance=ExtResource("2_5vdjj")]
-offset_left = 353.0
-offset_top = 508.0
-offset_right = 425.0
-offset_bottom = 580.0
+offset_left = 321.0
+offset_top = 694.0
+offset_right = 449.0
+offset_bottom = 822.0
+icon = null
+
+[node name="Sprite2D" type="Sprite2D" parent="Rock2"]
+scale = Vector2(2, 2)
+texture = ExtResource("3_5vdjj")
+centered = false
 
 [node name="Rock3" parent="." instance=ExtResource("2_5vdjj")]
-offset_left = 201.0
-offset_top = 812.0
-offset_right = 273.0
-offset_bottom = 884.0
+offset_left = 689.0
+offset_top = 859.0
+offset_right = 817.0
+offset_bottom = 987.0
+icon = null
+
+[node name="Sprite2D" type="Sprite2D" parent="Rock3"]
+scale = Vector2(2, 2)
+texture = ExtResource("3_5vdjj")
+centered = false
 
 [node name="Rock4" parent="." instance=ExtResource("2_5vdjj")]
-offset_left = 1155.0
-offset_top = 913.0
-offset_right = 1227.0
-offset_bottom = 985.0
+offset_left = 1371.0
+offset_top = 868.0
+offset_right = 1499.0
+offset_bottom = 996.0
+icon = null
+
+[node name="Sprite2D" type="Sprite2D" parent="Rock4"]
+scale = Vector2(2, 2)
+texture = ExtResource("3_5vdjj")
+centered = false
 
 [node name="Rock5" parent="." instance=ExtResource("2_5vdjj")]
-offset_left = 1534.0
-offset_top = 651.0
-offset_right = 1606.0
-offset_bottom = 723.0
+offset_left = 1682.0
+offset_top = 561.0
+offset_right = 1810.0
+offset_bottom = 689.0
+icon = null
+
+[node name="Sprite2D" type="Sprite2D" parent="Rock5"]
+scale = Vector2(2, 2)
+texture = ExtResource("3_5vdjj")
+centered = false
 
 [node name="Rock6" parent="." instance=ExtResource("2_5vdjj")]
-offset_left = 1367.0
-offset_top = 280.0
-offset_right = 1439.0
-offset_bottom = 352.0
+offset_left = 1266.0
+offset_top = 287.0
+offset_right = 1394.0
+offset_bottom = 415.0
+icon = null
+
+[node name="Sprite2D" type="Sprite2D" parent="Rock6"]
+scale = Vector2(2, 2)
+texture = ExtResource("3_5vdjj")
+centered = false
 
 [node name="StoneSpot" parent="." instance=ExtResource("1_x2hpw")]
 position = Vector2(923, 514)

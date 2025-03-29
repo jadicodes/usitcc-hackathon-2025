@@ -1,58 +1,50 @@
-[gd_scene load_steps=5 format=3 uid="uid://dgbfkf5rb762o"]
+[gd_scene load_steps=4 format=3 uid="uid://dgbfkf5rb762o"]
 
 [ext_resource type="Script" uid="uid://ui6edqn0stbi" path="res://minigames/hide/hide.gd" id="1_4iv3a"]
 [ext_resource type="Script" uid="uid://b36mt6u73u8kv" path="res://minigames/hide/tapping_button.gd" id="2_j87tj"]
-
-[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_j87tj"]
-size = Vector2(460, 850)
-
-[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_4iv3a"]
-size = Vector2(64, 64)
+[ext_resource type="Texture2D" uid="uid://w0kmf4lx5agj" path="res://Assets/BearHide.png" id="2_uyolu"]
 
 [node name="Hide" type="Node2D"]
 script = ExtResource("1_4iv3a")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(981, 586)
-texture = SubResource("PlaceholderTexture2D_j87tj")
+position = Vector2(977, 595)
+scale = Vector2(1.31455, 2.10941)
+texture = ExtResource("2_uyolu")
 
 [node name="TappingButton" type="Button" parent="."]
-offset_left = 728.0
-offset_top = 140.0
-offset_right = 800.0
-offset_bottom = 212.0
-icon = SubResource("PlaceholderTexture2D_4iv3a")
+offset_left = 749.0
+offset_top = 340.0
+offset_right = 821.0
+offset_bottom = 412.0
 script = ExtResource("2_j87tj")
 
 [node name="TappingButton2" type="Button" parent="."]
-offset_left = 735.0
-offset_top = 943.0
-offset_right = 807.0
-offset_bottom = 1015.0
-icon = SubResource("PlaceholderTexture2D_4iv3a")
+offset_left = 1132.0
+offset_top = 341.0
+offset_right = 1204.0
+offset_bottom = 413.0
 script = ExtResource("2_j87tj")
 
 [node name="TappingButton3" type="Button" parent="."]
-offset_left = 1167.0
-offset_top = 943.0
-offset_right = 1239.0
-offset_bottom = 1015.0
-icon = SubResource("PlaceholderTexture2D_4iv3a")
+offset_left = 744.0
+offset_top = 925.0
+offset_right = 816.0
+offset_bottom = 997.0
 script = ExtResource("2_j87tj")
 
 [node name="TappingButton4" type="Button" parent="."]
-offset_left = 1180.0
-offset_top = 143.0
-offset_right = 1252.0
-offset_bottom = 215.0
-icon = SubResource("PlaceholderTexture2D_4iv3a")
+offset_left = 1146.0
+offset_top = 936.0
+offset_right = 1218.0
+offset_bottom = 1008.0
 script = ExtResource("2_j87tj")
 
-[connection signal="finished" from="TappingButton" to="." method="_on_tapping_button_finished"]
+[connection signal="no_more_clicks" from="TappingButton" to="." method="_on_tapping_button_no_more_clicks"]
 [connection signal="pressed" from="TappingButton" to="TappingButton" method="_on_pressed"]
-[connection signal="finished" from="TappingButton2" to="." method="_on_tapping_button_finished"]
+[connection signal="no_more_clicks" from="TappingButton2" to="." method="_on_tapping_button_no_more_clicks"]
 [connection signal="pressed" from="TappingButton2" to="TappingButton2" method="_on_pressed"]
-[connection signal="finished" from="TappingButton3" to="." method="_on_tapping_button_finished"]
+[connection signal="no_more_clicks" from="TappingButton3" to="." method="_on_tapping_button_no_more_clicks"]
 [connection signal="pressed" from="TappingButton3" to="TappingButton3" method="_on_pressed"]
-[connection signal="finished" from="TappingButton4" to="." method="_on_tapping_button_finished"]
+[connection signal="no_more_clicks" from="TappingButton4" to="." method="_on_tapping_button_no_more_clicks"]
 [connection signal="pressed" from="TappingButton4" to="TappingButton4" method="_on_pressed"]
