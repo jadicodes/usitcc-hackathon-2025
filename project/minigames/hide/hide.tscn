@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://dgbfkf5rb762o"]
 
 [ext_resource type="Script" uid="uid://ui6edqn0stbi" path="res://minigames/hide/hide.gd" id="1_4iv3a"]
-[ext_resource type="Script" uid="uid://b36mt6u73u8kv" path="res://minigames/hide/tapping_button.gd" id="2_j87tj"]
+[ext_resource type="Script" path="res://minigames/hide/tapping_button.gd" id="2_j87tj"]
 
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_j87tj"]
 size = Vector2(460, 850)
@@ -13,40 +13,50 @@ size = Vector2(64, 64)
 script = ExtResource("1_4iv3a")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(981, 586)
+position = Vector2(1004, 804.5)
+scale = Vector2(1.91739, 0.485882)
 texture = SubResource("PlaceholderTexture2D_j87tj")
 
 [node name="TappingButton" type="Button" parent="."]
-offset_left = 728.0
-offset_top = 140.0
-offset_right = 800.0
-offset_bottom = 212.0
+offset_left = 557.0
+offset_top = 594.0
+offset_right = 629.0
+offset_bottom = 666.0
 icon = SubResource("PlaceholderTexture2D_4iv3a")
 script = ExtResource("2_j87tj")
 
 [node name="TappingButton2" type="Button" parent="."]
-offset_left = 735.0
-offset_top = 943.0
-offset_right = 807.0
-offset_bottom = 1015.0
+offset_left = 570.0
+offset_top = 949.0
+offset_right = 642.0
+offset_bottom = 1021.0
 icon = SubResource("PlaceholderTexture2D_4iv3a")
 script = ExtResource("2_j87tj")
 
 [node name="TappingButton3" type="Button" parent="."]
-offset_left = 1167.0
-offset_top = 943.0
-offset_right = 1239.0
-offset_bottom = 1015.0
+offset_left = 1379.0
+offset_top = 945.0
+offset_right = 1451.0
+offset_bottom = 1017.0
 icon = SubResource("PlaceholderTexture2D_4iv3a")
 script = ExtResource("2_j87tj")
 
 [node name="TappingButton4" type="Button" parent="."]
-offset_left = 1180.0
-offset_top = 143.0
-offset_right = 1252.0
-offset_bottom = 215.0
+offset_left = 1381.0
+offset_top = 603.0
+offset_right = 1453.0
+offset_bottom = 675.0
 icon = SubResource("PlaceholderTexture2D_4iv3a")
 script = ExtResource("2_j87tj")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 5.0
+offset_right = 1905.0
+offset_bottom = 179.0
+theme_override_font_sizes/font_size = 64
+text = "Attach the hide to the structure."
+horizontal_alignment = 1
+autowrap_mode = 2
 
 [connection signal="finished" from="TappingButton" to="." method="_on_tapping_button_finished"]
 [connection signal="pressed" from="TappingButton" to="TappingButton" method="_on_pressed"]

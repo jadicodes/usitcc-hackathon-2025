@@ -33,7 +33,7 @@ func change_minigame(new_minigame):
 	current_minigame = new_minigame
 	match current_minigame:
 		state.FIREPIT:
-			$Stickbending.hide()
+			$Stickbending.hide_everything()
 			$Firepit.show()
 			$Hide.hide()
 		state.STICKBENDER:
@@ -41,7 +41,7 @@ func change_minigame(new_minigame):
 			$Firepit.hide()
 			$Hide.hide()
 		state.HIDE:
-			$Stickbending.hide()
+			$Stickbending.hide_everything()
 			$Firepit.hide()
 			$Hide.show()
 		state.MAP:
