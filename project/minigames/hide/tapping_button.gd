@@ -7,6 +7,6 @@ var clicked : int = 0
 
 func _on_pressed():
 	clicked += 1
-	if clicked == 4:
+	if clicked == 2:
 		self.disabled = true
 		emit_signal("no_more_clicks")
