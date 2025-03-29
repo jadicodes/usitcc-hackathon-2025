@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b75ltwsnw23gb"
-path="res://.godot/imported/wisconsin_button.png-e637daad8ee27229d91939700ba2cb3d.ctex"
+uid="uid://cblbj74cpbac3"
+path="res://.godot/imported/background_Texas.png-71c817bee22209f2cc24f8bf609044b0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://villages/wisconsin_button.png"
-dest_files=["res://.godot/imported/wisconsin_button.png-e637daad8ee27229d91939700ba2cb3d.ctex"]
+source_file="res://villages/background_Texas.png"
+dest_files=["res://.godot/imported/background_Texas.png-71c817bee22209f2cc24f8bf609044b0.ctex"]
 
 [params]
 

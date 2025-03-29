@@ -6,7 +6,7 @@
 [ext_resource type="Resource" uid="uid://df50dxj18nh4s" path="res://villages/missouri.tres" id="3_4hjbm"]
 [ext_resource type="Resource" uid="uid://6a0vg4r4jn8e" path="res://villages/illinois.tres" id="5_7lyie"]
 [ext_resource type="Resource" uid="uid://dcp0v67kvysfq" path="res://villages/michigan.tres" id="5_kffv2"]
-[ext_resource type="Resource" uid="uid://c3s5dpodrygoo" path="res://villages/wisconsin.tres" id="5_kxmgb"]
+[ext_resource type="Resource" uid="uid://c3s5dpodrygoo" path="res://villages/texas.tres" id="5_kxmgb"]
 [ext_resource type="Resource" uid="uid://bgbxdetra68ow" path="res://villages/oklahoma.tres" id="6_5jdw0"]
 
 [node name="Map" type="Control"]
@@ -20,7 +20,8 @@ script = ExtResource("1_hgrid")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 0
-offset_right = 1920.0
+offset_top = -57.0
+offset_right = 2005.0
 offset_bottom = 1080.0
 texture = ExtResource("2_lgq1i")
 
@@ -34,10 +35,10 @@ village = ExtResource("3_4hjbm")
 
 [node name="VillageButton2" parent="." instance=ExtResource("2_a0dt8")]
 layout_mode = 0
-offset_left = 645.0
-offset_top = 17.0
-offset_right = 745.0
-offset_bottom = 117.0
+offset_left = 63.0
+offset_top = 885.0
+offset_right = 163.0
+offset_bottom = 985.0
 village = ExtResource("5_kxmgb")
 
 [node name="VillageButton3" parent="." instance=ExtResource("2_a0dt8")]
@@ -50,10 +51,10 @@ village = ExtResource("5_7lyie")
 
 [node name="VillageButton4" parent="." instance=ExtResource("2_a0dt8")]
 layout_mode = 0
-offset_left = 401.0
-offset_top = 785.0
-offset_right = 501.0
-offset_bottom = 885.0
+offset_left = 474.0
+offset_top = 754.0
+offset_right = 574.0
+offset_bottom = 854.0
 village = ExtResource("6_5jdw0")
 
 [node name="VillageButton5" parent="." instance=ExtResource("2_a0dt8")]

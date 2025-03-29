@@ -40,6 +40,15 @@ offset_right = 1218.0
 offset_bottom = 1008.0
 script = ExtResource("2_j87tj")
 
+[node name="Label" type="Label" parent="."]
+offset_left = 5.0
+offset_right = 1905.0
+offset_bottom = 179.0
+theme_override_font_sizes/font_size = 64
+text = "Attach the hide to the structure."
+horizontal_alignment = 1
+autowrap_mode = 2
+
 [connection signal="no_more_clicks" from="TappingButton" to="." method="_on_tapping_button_no_more_clicks"]
 [connection signal="pressed" from="TappingButton" to="TappingButton" method="_on_pressed"]
 [connection signal="no_more_clicks" from="TappingButton2" to="." method="_on_tapping_button_no_more_clicks"]

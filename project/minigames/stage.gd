@@ -33,7 +33,7 @@ func change_minigame(new_minigame):
 	current_minigame = new_minigame
 	match current_minigame:
 		state.FIREPIT:
-			$Stickbending.hide()
+			$Stickbending.hide_everything()
 			$Firepit.show()
 			$Hide.hide()
 		state.STICKBENDER:
@@ -41,7 +41,7 @@ func change_minigame(new_minigame):
 			$Firepit.hide()
 			$Hide.hide()
 		state.HIDE:
-			$Stickbending.hide()
+			$Stickbending.hide_everything()
 			$Firepit.hide()
 			$Hide.show()
 		state.MAP:
@@ -52,5 +52,6 @@ func _on_firepit_succeeded() -> void:
 	get_tree().change_scene_to_file("res://end_scene.tscn")
 
 
-func _on_hide_suceeded() -> void:
+
+func _on_hide_succeeded() -> void:
 	change_minigame(state.FIREPIT)
