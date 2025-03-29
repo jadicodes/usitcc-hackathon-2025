@@ -24,4 +24,4 @@ position = Vector2(7, 9)
 
 [connection signal="succeeded" from="Firepit" to="." method="_on_firepit_succeeded"]
 [connection signal="succeeded" from="Stickbending" to="." method="_on_stickbending_succeeded"]
-[connection signal="suceeded" from="Hide" to="." method="_on_hide_suceeded"]
+[connection signal="succeeded" from="Hide" to="." method="_on_hide_succeeded"]

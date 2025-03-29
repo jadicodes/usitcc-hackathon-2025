@@ -52,5 +52,6 @@ func _on_firepit_succeeded() -> void:
 	get_tree().change_scene_to_file("res://end_scene.tscn")
 
 
-func _on_hide_suceeded() -> void:
+
+func _on_hide_succeeded() -> void:
 	change_minigame(state.FIREPIT)
